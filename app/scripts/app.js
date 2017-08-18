@@ -6,18 +6,12 @@
                  requireBase: false
               });
 
-        //  $stateProvider
-        //      .state('home', {
-        //          url: '/',
-        //          controller: 'HomeCtrl as home',
-        //          templateUrl: '/templates/home.html'
-          //   });
-            $stateProvider
-             .state('room', {
-               url:'/',
-               controller: 'RoomCtrl as room',
-               templateUrl: '/templates/home.html'
-             });
+         $stateProvider
+             .state('home', {
+                 url: '/',
+                 controller: 'HomeCtrl as home',
+                 templateUrl: '/templates/home.html'
+            });
 
      }
 

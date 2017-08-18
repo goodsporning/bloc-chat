@@ -1,0 +1,15 @@
+.body{
+  font-family: 'Open Sans';
+}
+
+.left {
+    position:absolute;
+    left:0; top:0px; bottom: 0;
+    width: 300px;
+    background-color:grey;
+    padding-left: 25px;
+}
+.main {
+    position: absolute;
+    left:178px; top:0px; right:0; bottom:0;
+}
