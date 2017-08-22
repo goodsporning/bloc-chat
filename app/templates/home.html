@@ -1,13 +1,47 @@
 
 
-<div class="left">
-<h1>Bloc Chat</h1>
-<div class = "sidebarList" ng-repeat = "room in home.rooms">
-  <ul>
-    {{ room.name }}
-  </ul>
-</div>
-</div>
-  <div class = "main">
-
+<!-- <div class="left">
+  <div id="wrapper">
+    <div id"title">
+    <h1>Bloc Chat</h1>
+    </div>
+    <div id="createButton">
+    <button type="button" class="btn btn-default" ng-click="home.openModal()">Create Room</button>
+    </div>
   </div>
+
+
+  <div class="sidebarList">
+    <br>
+    <ul ng-repeat="room in home.rooms">
+      {{ room.name }}
+    </ul>
+  </div>
+
+</div>
+<div class="main">
+
+</div> -->
+
+<div class="container">
+  <div class="header">
+    </br>
+    <h1>Bloc Chat</h1>
+    </br>
+  </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <nav class="nav-sidebar">
+                <ul class="nav">
+                    <li class="active"><a href="javascript:;" ng-click="home.openModal()">+ Create Room</a></li>
+                    <li ng-repeat="room in home.rooms"><a href="javascript:;">
+                      {{ room.name }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        </div>
+    </div>
+</div>
