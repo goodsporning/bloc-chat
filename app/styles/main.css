@@ -1,29 +1,4 @@
-/*.body{
-  font-family: 'Open Sans';
-}
 
-.left {
-    position:absolute;
-    left:0; top:0px; bottom: 0;
-    width: 300px;
-    background-color:grey;
-    padding-left: 25px;
-}
-#title{
-  float:left;
-  width:75%;
-  overflow:hidden;
-}
-}
-#createButton{
-  float:left;
-width:25%;
-overflow:hidden;
-}
-.main {
-    position: absolute;
-    left:178px; top:0px; right:0; bottom:0;
-}*/
 .header{
   background-color: #404040;
   padding: 10px;
@@ -78,5 +53,5 @@ overflow:hidden;
 }
 
 .form{
-  padding: 8px; 
+  padding: 8px;
 }
