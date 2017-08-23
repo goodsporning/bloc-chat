@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, $uibModal, $scope) {
       this.rooms = Room.all
       this.openModal = function(){
         $uibModal.open({
@@ -7,7 +7,9 @@
           controller: 'ModalCtrl as modal'
         })
       }
-      
+
+      $scope.activeRoom = room;
+
     }
 
     angular

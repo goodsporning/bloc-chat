@@ -1,4 +1,6 @@
 
+/*SideBar and Header*/
+
 .header{
   background-color: #404040;
   padding: 10px;
@@ -10,6 +12,7 @@
     height:900px;
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .nav-sidebar a {
     color: #333;
@@ -50,8 +53,58 @@
 }
 .row{
   height: 900px;
+  width:auto;
+  float:left;
+  overflow:hidden;
+
+}
+.main{
+
+  width: 940px;
+  height:900px;
+  float: left;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .form{
   padding: 8px;
+}
+
+/*Main Chat Body*/
+.message-candidate {
+  background: rgba(223, 229, 121, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.message-hiring-manager {
+  background: rgba(0, 167, 204, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.messaging {
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.message-text {
+  margin-top: 10px;
+}
+
+.message-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  display: inline-block;
+}
+
+.message-name {
+  margin-left: 10px;
+  display: inline-block;
 }
