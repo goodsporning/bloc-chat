@@ -18,10 +18,21 @@
             </nav>
         </div>
     </div>
+
     <div class="main">
-        <!-- Room Name -->
       <div class="chatTitle">
         <h2 >{{ home.activeRoom.name }}</h2>
+        <div ng-repeat="message in home.messages">
+              <div class="daycol"
+                ng-class-odd="'oddChat'"
+                ng-class-even="'evenChat'">
+                {{ message.content }}</br>
+                <small class="text-muted">{{ message.username }} {{ message.sentAt }}</small>
+              </div>
+        </div>
+        <!-- <p ng-repeat="message in home.messages">
+          {{ message.username }}: {{ message.content }}
+        </p> -->
       </div>
     </div>
 </div>

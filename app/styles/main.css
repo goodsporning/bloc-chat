@@ -62,6 +62,7 @@
 
   width: 940px;
   height:900px;
+  padding: 50px;
   float: left;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -108,3 +109,26 @@
   margin-left: 10px;
   display: inline-block;
 }
+
+/*Chat CSS*/
+
+.daycol
+  {
+    height: 60px;
+    width: 100%;
+    float: left;
+    padding: 20px;
+    background-color: rgb(215, 230, 238);
+
+    vertical-align: top;
+  }
+  .oddChat
+  {
+    background-color: rgb(215, 230, 238);
+    text-align: left;
+  }
+  .evenChat
+  {
+    background-color: rgb(147, 182, 202);
+    text-align: right;
+  }
