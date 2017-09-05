@@ -5,7 +5,8 @@
       $uibModal.open({
         templateUrl: '/templates/username.html',
         size: 'sm',
-        controller: 'ModalCtrl as modal'
+        controller: 'ModalCtrl as modal',
+        backdrop: 'static'
       });
     }
   }
