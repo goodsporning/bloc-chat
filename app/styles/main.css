@@ -132,3 +132,16 @@
     background-color: rgb(147, 182, 202);
     text-align: right;
   }
+
+  /*Username Formatting*/
+  .username
+  {
+    margin:35px;
+  }
+
+  .username-footer{
+    margin-left: 20px;
+  }
+  .username-body{
+    margin: 20px;
+  }
