@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, Message, $uibModal, $cookies) {
+    function HomeCtrl(Room, Message, $uibModal, $cookies, $scope) {
       var home = this;
       home.rooms = Room.all;
       home.activeRoom = null;
@@ -17,11 +17,15 @@
         home.messages = Message.getByRoomID(room.$id)
             //get messages when the room selected is active
       }
+      home.sendMessage = function(content){
+        Message.send(content, home.currentUser, home.activeRoom.$id);
+        $scope.content = "";
+      }
     }
 
       angular
           .module('blocChat')
-          .controller('HomeCtrl', ['Room', 'Message', '$uibModal', '$cookies', HomeCtrl]);
+          .controller('HomeCtrl', ['Room', 'Message', '$uibModal', '$cookies', '$scope', HomeCtrl]);
 })();
 
 //Room is the Service
